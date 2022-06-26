@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' defer></script>
+</head>
+<body>
+    <header>
+        <p>Calculator</p>
+    </header>
+    <main>
+        <div>
+            <p><b>Task Title:</b> Introduction to javascript.</p>
+            <p><b>Javascript Code: </b><kbd>main.js</kbd></p>
+            <p>
+                Operations allowed:
+                <ul>
+                    <li>Addition</li>
+                    <li>Subtraction</li>
+                    <li>Multiplication</li>
+                    <li>Division</li>
+                </ul>
+            </p>
+        </div>
+        <div>
+            <form>
+                <p>JavaScript Calculator</p>
+                <div>
+                    <p><span id="error">Error</span></p>
+                </div>
+                <div>
+                    <label for="operand-1">Enter first number: </label>
+                    <input name="operand-1" type="number" id="operand-1" />
+                </div>
+                <div>
+                    <label for="operator">Enter operator: </label>
+                    <input name="operator" id="operator" value="+" list="operators" />
+                    <datalist id="operators">
+                        <option value="+" selected>Addition</option>
+                        <option value="-">Subtraction</option>
+                        <option value="*">Multiplication</option>
+                        <option value="/">Division</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="operand-2">Enter second number: </label>
+                    <input name="operand-2" type="number" id="operand-2" />
+                </div>
+                <div>
+                    <p><button name="calculate" type="button" id="calculate">Calculate</button></p>
+                </div>
+                <div>
+                    <output name="result" for="operand-1 operator operand-2"><span id="result" >No Output</span></output>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

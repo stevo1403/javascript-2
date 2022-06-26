@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(24, 74, 118);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+header{
+    background-color: rgba(24, 74, 118, 0.789);
+    border: 1px solid white;
+    font-family: monospace;
+    font-size: 20px;
+}
+header p{
+    text-align: center;
+    font-size: 18px;
+}
+main{
+    background-color: rgba(24, 74, 118, 0.41);
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+main div:first-child{
+    border: 1px solid white;
+    margin-right: 5px;
+    padding: 5px;
+}
+main form{
+    border: 1px solid white;
+    padding: 10px;
+    width: 450px;
+}
+main form > p{
+    background-color: rgba(32, 87, 135, 0.41);
+    border: 1px dotted yellow;
+    margin: 0px;
+    text-align: center;
+}
+main form div{
+    display: flex;
+    margin-bottom: 10px;
+}
+main form div label{
+    flex: 50%;
+    text-align: left;
+}
+main form div input{
+    flex: 40%;
+    color: green;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+main form div input#operator{
+    text-align: center;
+}
+
+main form div output{
+    flex: 100%;
+    text-align: right;
+    margin-top: 5px;
+}
+main form div p{
+    text-align: center;
+    flex: 100%;
+    margin: 0px;
+}
+
+main form div p > span{
+    color: red;
+    background-color: pink;
+    display: none;
+}
+
+main form div p button{
+    margin:0px;
+    padding: 5px 8px;
+    background-color: rgba(20, 87, 146, 0.789);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+main form div output span{
+    font-size: 19px;
+    background-color: rgb(98, 120, 139);
+    border-radius: 5px;
+    border: 1px solid yellowgreen;
+    padding:5px;
+}
